@@ -6,7 +6,7 @@ import os
 import sys
 
 def main():
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "your_project.settings")  # Replace with your actual project name
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "dbproj.settings")  # Replace with your actual project name
 
     # Only append host/port if "runserver" is already in the arguments and no port is defined
     if "runserver" in sys.argv and not any(":" in arg for arg in sys.argv):
