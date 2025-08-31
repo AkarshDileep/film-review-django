@@ -1,6 +1,10 @@
 #!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
 import os
+port = os.environ.get("PORT", 8000)
+sys.argv += ["runserver", f"0.0.0.0:{port}"]
+execute_from_command_line(sys.argv)
+
 import sys
 
 
